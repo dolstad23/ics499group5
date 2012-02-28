@@ -12,7 +12,7 @@ import android.widget.Toast;
 /** Second Activity. */
 public class Animal extends Activity{
 
-    
+    //git hub edit and commit test
 
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
