@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:background="#FF9900" android:layout_height="match_parent" android:id="@+id/relativeLayout1">
+        <TextView android:textStyle="bold" android:textColor="#070707" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_below="@+id/editText1" android:layout_centerHorizontal="true" android:textSize="15dp" android:text="@string/website" android:paddingTop="10dip"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_below="@+id/imageView1" android:layout_alignRight="@+id/imageView1" android:text="V 1.0" android:textColor="#000000" android:textStyle="bold"></TextView>
+        <EditText android:clickable="false" 
+        android:cursorVisible="false" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false" android:background="@drawable/buttonshape" android:layout_width="wrap_content" android:textColor="#FFFFFF" android:inputType="textMultiLine" android:id="@+id/editText1" android:layout_height="wrap_content" android:padding="10dip" android:layout_below="@+id/textView2" android:layout_alignRight="@+id/textView3" android:layout_marginTop="16dp" android:layout_alignLeft="@+id/imageView1">
+            <requestFocus></requestFocus>
+        </EditText>
+        <ImageView android:layout_height="85dp" android:id="@+id/imageView1" android:layout_width="280dp" android:src="@drawable/logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></ImageView>
+        <TextView android:textStyle="bold" android:textColor="#000000" android:layout_width="wrap_content" android:textSize="22dp" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/welcome" android:layout_height="wrap_content" android:id="@+id/textView2" android:gravity="center" android:layout_below="@+id/textView3" android:layout_centerHorizontal="true" android:layout_marginTop="20dp"></TextView>
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/pet_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF9900"
+        android:focusable="true" 
+        android:focusableInTouchMode="true" >
+        
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"                      
+            android:src="@drawable/logo"
+        />
+        
+        <TextView
+            android:id="@+id/petInfoForm"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/imageView2"
+            android:text="@string/petFormIntro" android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/animalTypeText"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/petInfoForm"            
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"            
+            android:text="@string/animal_type" />
+        
+        <Spinner
+            android:id="@+id/animalTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animalTypeText"                       
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:prompt="@string/animal_type" />
+        
+        <TextView
+            android:id="@+id/breedTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animalTypeSpinner"            
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/breed_type" />
+        
+        <Spinner
+            android:id="@+id/breedSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"                        
+            android:layout_below="@+id/breedTypeText" 
+            android:layout_marginTop="0dp"           
+            android:layout_marginBottom="10dp"
+            android:prompt="@string/breed_type" />
+        
+        <TextView
+            android:id="@+id/sizeText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/breedSpinner"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginBottom="0dp"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+	        android:text="@string/size"  />
+        
+        <Spinner
+	         android:id="@+id/sizeSpinner"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/sizeText"
+	         android:layout_marginTop="0dp"
+	         android:layout_marginBottom="10dp"
+	         android:prompt="@string/size" />
+	    
+	    <TextView
+	        android:id="@+id/colorText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/sizeSpinner"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginBottom="0dp"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+	        android:text="@string/color"
+	    />
+	
+	    <Spinner
+	         android:id="@+id/colorSpinner"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/colorText"
+	         android:layout_marginTop="0dp"
+	         android:layout_marginBottom="10dp"
+	         android:prompt="@string/color" >
+	    </Spinner>
+	    
+	    <TextView
+	        android:id="@+id/petDecriptionText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/colorSpinner"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginBottom="0dp"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+	        android:text="@string/petDecription" />
+
+	    <EditText
+	        android:id="@+id/petDescription"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/petDecriptionText"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginBottom="10dp"
+	        android:inputType="textMultiLine" >
+
+	        
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/pictureText"
+	        android:layout_width="175dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/petDescription"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginBottom="0dp"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="12dp"            
+            android:textStyle="bold"
+            android:textColor="#000000"
+	        android:text="@string/picture" />
+	    
+	    <Button
+	        android:id="@+id/pictureButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_toRightOf="@+id/pictureText"	        
+	        android:layout_below="@+id/petDescription"	        
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="@drawable/buttonshape"
+	        android:text="@string/pictureButton" />
+	    
+	    <TextView
+	        android:id="@+id/userPictureText"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/pictureText"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:background="#000000"
+	        android:text="@string/tempPictureText" />
+	    
+	    <Button
+	        android:id="@+id/postButton"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" 
+            android:layout_below="@+id/userPictureText"           		           
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="25dp"
+	        android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"	        
+	        android:background="@drawable/buttonshape"
+	        android:text="@string/postButton" />
+	    
+        
+        
+    </RelativeLayout>
+	
+</ScrollView>
+    

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PetfinderActivity!</string>
+    <string name="app_name">Pet Finder</string>
+    <string name="found">Found a Pet</string>
+    <string name="lost">Lost a Pet</string>
+    <string name="viewall">View All</string>
+    <string name="about">About</string>
+    <string name="next">Next</string>
+    <string name="petFormIntro">Please fill in the pet information form below.</string>
+    
+    <string name="animal_type">Select the type of Animal:</string>
+    <string-array name="animal_type">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Reptile</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string name="breed_type">Select the Breed:</string>
+    <string-array name="dogs">
+        <item>Beagle</item>        
+        <item>Boston Terrier</item>
+        <item>Boxer</item>
+        <item>German Shepherd </item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="cats">
+        <item>Domestic shorthair cat</item>        
+        <item>Persian</item>
+        <item>Siamese</item>
+        <item>Snowshoe</item>
+        <item>Other</item>
+    </string-array>
+    <string name="size">Select the animal size:</string>
+    <string-array name="size">
+        <item>Small</item>        
+        <item>Medium</item>
+        <item>Large</item>        
+    </string-array>
+    <string name="color">Select the Approximate Color:</string>
+    <string-array name="color">
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Grey</item>        
+        <item>Orange</item>
+        <item>White</item>        
+        <item>Mixed</item>
+        <item>Other</item>        
+    </string-array>
+    <string name="picture">Would you like to add a picture of the pet?</string>
+    <string name="radioYes">Yes</string>
+    <string name="radioNo">no</string>
+    <string name="petDecription">Enter a brief description of your pet:</string>
+    <string name="postButton">Post Ad</string>
+    <string name="pictureButton">Add Picture</string>
+    <string name="tempPictureText">Selected picture will be seen here</string>
+    <string name="welcome">Welcome to PetFinder!</string>
+    <string name="website">www.petfinder.com</string>
+    <string name="createPost">Create a Post</string>
+    <string name="viewdelete">View/Delete Post</string>
+    <string name="matches">View Matches</string>
+    
+    <string name="lostpets">View Lost Pets</string>
+    <string name="foundpets">View found Pets</string>
+    <string name="postingView">Select the type of Postings you would like to view</string>
+    
+    <string-array name="lost_array">
+        <item>Picture | lost posting 1</item>
+        <item>Picture | lost posting 2</item>
+        <item>Picture | lost posting 3</item>
+        <item>Picture | lost posting 4</item>
+        <item>Picture | lost posting 5</item>
+        <item>Picture | lost posting 6</item>
+        <item>Picture | lost posting 7</item>
+    </string-array>
+    
+    <string-array name="found_array">
+        <item>Picture | found posting 1</item>
+        <item>Picture | found posting 2</item>
+        <item>Picture | found posting 3</item>
+        <item>Picture | found posting 4</item>
+        <item>Picture | found posting 5</item>
+        <item>Picture | found posting 6</item>
+        <item>Picture | found posting 7</item>
+    </string-array>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF9900" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" android:layout_height="85dp">
+        </ImageView>
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignRight="@+id/button1"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/buttonshape"
+            android:height="45dp"
+            android:maxHeight="50dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" android:text="@string/viewdelete">
+        </Button>
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button01"
+            android:layout_alignRight="@+id/Button01"
+            android:layout_below="@+id/Button01"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:height="45dp"
+            android:maxHeight="50dp"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" android:text="@string/matches">
+        </Button>
+        <Button android:layout_width="250px" android:background="@drawable/buttonshape" android:layout_height="wrap_content" android:height="45dp" android:textStyle="bold" android:id="@+id/button1" android:maxHeight="60dp" android:maxWidth="200px" android:textColor="#ffffff" android:textSize="25dp" android:layout_centerVertical="true" android:layout_alignLeft="@+id/imageView1" android:layout_alignRight="@+id/imageView1" android:text="@string/createPost"></Button>
+        <EditText android:hint="Email Address:" android:layout_width="wrap_content" android:id="@+id/editText1" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:layout_above="@+id/button1" android:layout_marginBottom="28dp" android:layout_alignRight="@+id/button1" android:layout_alignLeft="@+id/button1">
+            <requestFocus></requestFocus>
+        </EditText>
+        
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_below="@+id/imageView1" android:layout_alignRight="@+id/imageView1" android:text="V 1.0" android:textColor="#000000" android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>
